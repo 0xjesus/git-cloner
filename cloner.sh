@@ -41,7 +41,7 @@ curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/users/$G
 echo "Cloning organization repositories..."
 ORGANIZATIONS=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/user/orgs" | jq -r ".[].login")
 for org in $ORGANIZATIONS; do
-    if [ "$org" != "venveo" ]; then
+    if [ "$org" != "$EXCLUDED_ORG" ]; then
         echo "Cloning repositories of the organization $org..."
         curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/orgs/$org/repos?per_page=100" | jq -r ".[].name" | while read repo; do clone_repo $repo $org; done
     else

@@ -19,6 +19,7 @@ This script automates the task of cloning all your personal GitHub repositories 
    ```
    GITHUB_TOKEN=your_github_token
    GITHUB_USER=your_github_username
+   EXCLUDED_ORG=excluded_organization
    ```
 2. Ensure the script is executable:
    ```bash
