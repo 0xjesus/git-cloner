@@ -1,5 +1,3 @@
-Below are a README and a `.gitignore` file tailored to your script, designed to have good SEO (Search Engine Optimization) for better visibility and clarity.
-
 ### README.md
 ```markdown
 # GitHub Repository Cloning Script
