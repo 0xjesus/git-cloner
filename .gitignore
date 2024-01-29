@@ -1,0 +1,27 @@
+
+### .gitignore
+```gitignore
+# General
+*.log
+*.tmp
+*.temp
+
+# Environment variables
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
